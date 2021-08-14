@@ -21,7 +21,6 @@ class QueryIn(BaseModel):
     hue: float
     diluted_wines: float
     proline: float
-    alcohol_class: str
 
 
 # class which is returned in the response
@@ -40,7 +39,7 @@ def ping():
 # Route to do the prediction using the ML model defined.
 # Payload: QueryIn containing the parameters
 # Response: QueryOut containing the alcohol_class predicted (200)
-def predict_flower(query_data: QueryIn):
+def predict_wine(query_data: QueryIn):
     output = {"alcohol_class": predict(query_data)}
     return output
 
