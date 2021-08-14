@@ -31,7 +31,7 @@ class TrainIn(BaseModel):
     hue: float
     diluted_wines: float
     proline: float
-    alochol_class: str
+    alcohol_class: str
 
 
 # Route definitions

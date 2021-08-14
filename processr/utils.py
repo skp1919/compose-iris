@@ -23,7 +23,7 @@ def process_data(data):
             "hue": d.hue,
             "diluted_wines": d.diluted_wines,
             "proline": d.proline,
-            "alochol_class": d.alcohol_class
+            "alcohol_class": d.alcohol_class
         }
         for d in data
     ]

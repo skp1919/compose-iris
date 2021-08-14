@@ -8,7 +8,7 @@ r_classes = {y: x for x, y in classes.items()}
 
 # function to train and load the model during startup
 def init_model():
-    if not os.path.isfile("models/wine_nb.pkl"):
+    if not os.path.isfile("models/wine_nb.pkl"):        
         clf = GaussianNB()
         pickle.dump(clf, open("models/wine_nb.pkl", "wb"))
 

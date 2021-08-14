@@ -21,7 +21,7 @@ class QueryIn(BaseModel):
     hue: float
     diluted_wines: float
     proline: float
-    alochol_class: str
+    alcohol_class: str
 
 
 # class which is returned in the response
